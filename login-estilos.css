@@ -39,6 +39,18 @@ h1 {
     background: transparent;
     color: #fff;
 }
+
+.validacion {
+    margin: 5px auto 20px ;
+    width: 80%;
+    text-align: center;
+    display: none;
+    outline: none;
+    padding: 1px 0;
+    color: #f00707;
+    font-size: 16px;
+}
+
 ::placeholder{
     color: #ccc;
 }
@@ -64,4 +76,7 @@ h1 {
     color: #fff;
     font-size: 16px;
     
+}
+.login-btn:hover {
+    box-shadow: 0 0 1px rgb(234, 231, 231), 0 0 5px rgb(224, 221, 221);
 }

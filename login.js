@@ -6,6 +6,8 @@ let z = document.getElementById(`hide2`)
 let inputUsuario = document.getElementById(`usuario`)
 let inputPass = document.getElementById (`pass`)
 let ingresar = document.getElementById(`ingresar`)
+let validate = document.getElementById(`validate`)
+
 
 
 
@@ -21,7 +23,8 @@ ingresar.addEventListener ((`submit`), (e) => {
             console.log(`logueaste`)
             window.location = "./panel-tienda/index.html"
         } else {
-            console.log(`no logueaste`)
+            console.log(`no logueaste`);
+            validate.style.display = "block"
         }
     }    )
 })
@@ -45,4 +48,4 @@ control.addEventListener((`click`), () => {
 })
 
 
-//QUE SIGUE? TENGO QUE UNIRLO A MI PROYECTO ANTERIOR. ES DECIR QUE EL LOGIN CORRECTO ME LLEVE AL PANEL DE ADMINISTRADOR. LUEGO PROLIJAR EL LOGIN CON REQUIRED Y SENIALES DE EXITO O RECHAZO DEL LOGIN
+//login terminado

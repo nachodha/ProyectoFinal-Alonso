@@ -13,15 +13,18 @@
         <form action="" id="ingresar">
         <div class="input-box">
             <i class="fa fa-user" aria-hidden="true"></i>
-            <input type="text" placeholder="usuario" id="usuario">
+            <input type="text" placeholder="usuario" id="usuario" required="required" autocomplete="off">
         </div>
         <div class="input-box">
             <i class="fa fa-key"></i>
-            <input type="password" placeholder="password" id="pass">
+            <input type="password" placeholder="password" id="pass" required="required" autocomplete="off">
             <span class="eye" id="control-vista">
             <i class="fa fa-eye" id="hide1"></i>
             <i class="fa fa-eye-slash" id="hide2"></i>
         </span>
+        </div>
+        <div class="validacion" id="validate">
+            <p>USUARIO O CONTRASEÑA INCORRECTOS</p>
         </div>
         <button type="submit" class="login-btn">INGRESAR</button>
     </form>
