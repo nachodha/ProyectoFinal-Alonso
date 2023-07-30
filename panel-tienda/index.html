@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN TIENDA</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+<div class="padre">
+     <form action="" id="formulario" class="nuevos-inputs">
+        <div class="inputbox">
+           <input type="text" placeholder="Producto" id="producto" required="required" autocomplete="off" class="input-producto">
+           <span>Nombre del producto</span>
+      </div>
+        <div class="inputbox">
+        <input type="number" placeholder="Precio" id="precio" required="required" autocomplete="off"class="input-producto">
+        <span>Precio del producto</span>
+      </div>
+      <div class="inputbox">
+        <input type="url" required="required"  placeholder="Link web de imagen" id="imagen" autocomplete="off" class="input-producto">
+        <span>Pegar link web de imagen</span>
+      </div>
+      <div class="botones">
+              <button class="searchBtn" id="searchBtn">BUSCAR LINK EN LA WEB</button>
+              <button type= "submit" id="agregar-producto" class="searchBtn">  AGREGAR PRODUCTO</button>
+              <button type="button" class="searchBtn" id="boton-actualizar">  ACTUALIZAR TIENDA</button>
+              <button type="button" class="searchBtn" id="boton-reinicio">  REINICIAR TIENDA</button>
+              
+              <button  class="searchBtn" ><a href="market.html" target="_blank" style="text-decoration: none;" class="aTienda">LINK A TIENDA</a></button>
+              <button type="button" class="searchBtn ayuda" id="boton-ayuda">  AYUDA</button>
+        </div>  
+      </form>  
+  <div class="container" id="contenido">
+    <ul id="listador" class="listador-admin"></ul>
+  </div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
