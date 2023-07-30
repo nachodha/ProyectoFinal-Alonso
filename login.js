@@ -25,6 +25,8 @@ ingresar.addEventListener ((`submit`), (e) => {
         } else {
             console.log(`no logueaste`);
             validate.style.display = "block"
+            inputPass.value = ""
+            inputUsuario.value = ""
         }
     }    )
 })
